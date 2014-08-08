@@ -11,9 +11,9 @@ public class C implements Runnable{
 		this.k = k;
 	}
 	
-	public void run()
+	synchronized public void run()
 	{
-		TimeUnit.SECONDS.equals(1);
+		//TimeUnit.SECONDS.equals(1);
 		System.out.printf("%s Beginning C %s\n",
 				Thread.currentThread().getName(),new Date());
 		
@@ -22,6 +22,12 @@ public class C implements Runnable{
 			A a = new A(18);
 			Thread t5 = new Thread(a,"ThreadFromC");
 			t5.start();
+			try {
+				t5.join();
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			k++;
 		}
 		System.out.printf("%s End C %s\n",
