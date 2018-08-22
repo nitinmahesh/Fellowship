@@ -17,3 +17,13 @@ This Java project covers:
 - Some tricky java questions
 - Class Hierarchy
 - Data structure in Java
+- Generics in Java
+- Java Collections framework
+- Java anonymous classes
+- Constructor with different class hierarchy
+- Java Inner class
+- Java Inheritance
+- Interfaces in java
+- Java Strings examples
+- Java IO and NIO frameworks examples
+- Java Synchronized keyword tricky examples
